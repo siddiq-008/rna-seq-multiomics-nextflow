@@ -1,0 +1,19 @@
+# Basic run
+nextflow run main.nf
+
+# Run using a custom config file
+nextflow run main.nf -c example/sample_params.config
+
+# Run with command-line parameters
+nextflow run main.nf \
+    --srr SRR4101836 \
+    --gtf reference/annotation.gtf \
+    --index reference/hisat2_index/genome \
+    --protein reference/protein.faa \
+    --counts data/important_genes.csv \
+    --eggnog_db /path/to/eggnog_db
+
+# Run with metabolic model integration
+nextflow run main.nf \
+    --metabolic_model data/msystems.00157-18-sd001_converted.csv \
+    --locus_prefix DJ41_
