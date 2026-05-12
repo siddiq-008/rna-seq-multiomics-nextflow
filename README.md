@@ -199,4 +199,4 @@ Those files are ignored using `.gitignore`.
 
 ## Author
 
-Raaj Lakshman
+Mohamed Siddiq
